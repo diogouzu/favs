@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Favorite Repositories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <header>
+            <nav class="navbar is-dark on-center" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <i class="fab fa-github"></i> GitHub Favs!
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="inputs">
+                    <h4 class="title is-4">Adicionar um repositório</h4>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" id="user" type="text" placeholder="Usuário">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input" id="repository" type="text" placeholder="Repositório">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-archive"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <button id="submit"class="button is-dark">
+                                    Adicionar repositório
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status">
+                    <div class="progress-container">
+
+                    </div>
+                </div>
+
+                <div class="repositories">
+                    <h4 class="title is-4">Seus repositórios</h4>
+
+                    <div class="repositories-list">
+                      
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <script src="./bundle.js"></script>
+</body>
+
+</html>
